@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<h1>Registration Form</h1>
+	<form name="signup" action="https://bucs601.com/submit.php" method="post">
+		<label class="input-class"><b>First Name</b></label>
+		<input id="firstName" type="text" name="firstName" placeholder="firstName" pattern="[A-Za-z]{2,}" title="Please enter 2 or more alpha characters." autocomplete="off" required>
+		<br />
+		<label class="input-class"><b>Last Name</b></label>
+		<input id="lastName" type="text" name="lastName" placeholder="lastName" pattern="[A-Za-z]{2,}" title="Please enter 2 or more alpha characters." autocomplete="off" required>
+		<br />
+		<label class="input-class"><b>Facilitator</b></label>
+		<input id="facilitator" type="text" name="facilitator" placeholder="facilitator" pattern="(Laura)*(Fazil)*(Harsh)*(Josh)*" title="Invalid entry. Please choose a facilitator: Laura, Fazil, Harsh, or Josh." autocomplete="off" required>
+		<br />
+		<br />
+
+		<fieldset>
+			<legend class="field-title">Please Select Your Gender</legend>
+			<input class="radio-button" type="radio" name="gender" value="Male">
+			<label class="radio-button">Male</label><br />
+			<input class="radio-button" type="radio" name="gender" value="Female">
+			<label class="radio-button">Female</label><br />
+			<input class="radio-button" type="radio" name="gender" value="I prefer not to say">
+			<label class="radio-button">I prefer not to say</label><br />
+		</fieldset>
+		<br />
+		<br />
+
+		<fieldset>
+			<legend class="field-title">Please Choose Your Occupation</legend>
+			<input class="check-button" type="checkbox" name="Occupation" value="Student">
+			<label class="check-button">Student</label>
+			<br />
+			<input class="check-button" type="checkbox" name="Occupation" value="Professor">
+			<label class="check-button">Professor</label>
+			<br />
+			<input class="check-button" type="checkbox" name="Occupation" value="Facilitator">
+			<label class="check-button">Facilitator</label>
+			<br />
+		</fieldset>
+		<br />
+		<br />
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
